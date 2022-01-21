@@ -8,7 +8,7 @@ class PatientModel {
   WorkType workType;
   ResidenceType residenceType;
   double avgGlucoseLevel;
-    double bmi;
+  double bmi;
   SmokingStatus smokingStatus;
   PatientModel({
     this.id,
@@ -24,6 +24,7 @@ class PatientModel {
     required this.smokingStatus,
   });
 
+  // TODO: add convert
   @override
   String toString() {
     return 'id: $id, gender: ${gender.value()}, age: $age, hypertension: ${hypertension ? 1 : 0}, heartDisease: ${heartDisease ? 1 : 0}, everMarried: ${everMarried ? 'Yes' : 'No'}, workType: ${workType.value()}, residenceType: ${residenceType.value()}, avgGlucoseLevel: $avgGlucoseLevel, bmi: $bmi, smokingStatus: ${smokingStatus.value()}';

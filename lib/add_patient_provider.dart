@@ -99,6 +99,7 @@ class AddPatientProvider with ChangeNotifier {
         bmi: double.parse(bmiController.text),
         smokingStatus: smokingStatus!);
 
+    // TODO: add handle add patient
     FirebaseFirestore.instance.collection('patients').add(patient.toJson());
     return Future.value(null);
   }
